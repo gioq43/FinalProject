@@ -26,8 +26,8 @@ body {
 
 color: whitesmoke;}
 
-body { background-color: navy;
-    background-image: url(../Health/foggy-birds.png);
+body { background-color: rgb(40, 40, 163);
+    background-image: url(http://www.transparenttextures.com/patterns/foggy-birds.png);
     padding: 25px 15px;
 margin: auto;
     
