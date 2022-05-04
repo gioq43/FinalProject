@@ -1,0 +1,246 @@
+<html lang="en">
+
+</html>
+
+<!--
+Author:Giovanni Quintero
+
+-->
+
+<head>
+	<meta charset="UTF -8">
+		<link rel="stylesheet" href="airplane.css">
+</head>
+
+<body>
+
+	<h1>Boeing or Airbus </h1>
+	<hr>	<br>
+
+	<p1>
+		
+		 The World's skies are dominated by thousands of airplanes at any given time. All differnet Types, Makes and Models.
+		There are two Main Aircraft Manufacturers that dominate those skies, Boeing and Airbus. Boeing has had a
+		rich history in the Commercial Passenger Jet Business
+		witht the release of the 707 in 1957. Since then it has come out with several different types of aircraft in the 700 Series that
+		have helped advance the Aviation Industry. 
+		<br />		<br> 	<br>
+
+
+		<img src="boeing1.jpeg" width="600px" height="270px" > 
+
+	</p1>	
+
+		<br /><br />	<br>
+
+
+	<p2>
+		On The other We have Airbus. Airbus is Boeing's main competitor and has developed its own fleet of aircraft since it was first founded 
+		in 1970 in France. Since then Airbus has manufactured Industry Changing Airplanes like the Double Decker A380 which was in a class of it own which in a full economoy
+		configuration can fill up to over 800 people. It has also recently developed the brand New A350 which has the ability to fly NonStop for over 20 Hours. 
+
+		<br />
+	</p2>
+<br/>	<br>
+
+
+
+
+<p3>
+		<img src="airbuss.webp" width="600px" height ="270px">
+		<br /><br />
+<hr>
+		<p4> 
+			What Airplane Manufacturer Am I?
+			
+		</p4><br /><br />
+
+		After each Question Please select what Aircraft Attribute you like best
+		<br /><br />
+
+		 Based on your Preferred Aircraft Attributes you will find out whether you are Team Boeing or Team Airbus!
+		</p3>
+	
+		<br><br/>	<br/>
+
+	<img src="737nose.jpeg" width="400px" height="175px" >
+	<br/>
+	<br/>
+	<img src="a320nose.jpeg" width="400px" height="175px" > 
+	
+	<br/>
+	<br>
+
+<p5>
+	<label>Aircraft Nose.</label><br />	<br>
+
+	<select id="q1">
+	</p5>
+
+
+		<option value="2">Round</option>
+		<option value="1">Pointy</option>
+
+	</select>
+	<br>
+	<br>
+	<img src="halfdouble.avif" width="400px" height="175px" >
+	<br/>	
+	<br/>
+	<img src="doubledeck.jpeg" width="400px" height="175px" >
+
+<br>
+<br>
+
+<p6>
+	<label>Jumbo Jet Size .</label><br />	<br>
+
+</p6>
+	<select id="q2">
+
+		<option value="2">Full Double Decker</option>
+		<option value="1">Half Double Decker</option>
+		<select id='q2' style='width: 200px;'>
+
+	</select>
+
+	<br>
+	<br>
+
+	<img src="yoke.jpeg" width="400px" height="175px" >
+	<br/>
+	<br/>
+
+	<img src="sidestick.webp" width="400px" height="175px" >
+
+<br>	<br>
+
+</p7>
+	<label>Preferred Aircraft Controls </label><br />		<br>
+
+
+</p7>
+	<select id="q3">
+
+		<option value="2">SideStick</option>
+		<option value="1">Full Center Yoke</option>
+	</select>
+
+
+	<br><br>
+	<img src="usaflag.webp" width="400px" height="175px" >
+	<br/><br/>
+	<img src="frenchflag.png" width="400px" height="175px" >
+	<br><br>
+
+</p8>
+	<label>Aircraft Country Manufacturer</label><br />	<br>
+</p8>
+	<select id="q4">
+
+		<option value="2">France</option>
+		<option value="1">United States Of America</option>
+	</select>
+
+	<br><br>
+	<img src="sharklet.jpeg" width="400px" height="175px" >
+	<br/> <br/>
+
+	<img src="winglet.jpeg" width="400px" height="175px" >
+	<br><br>
+</p9>
+	<label>Sharklet Vs Winglet </label><br />	<br>
+
+	<select id="q5">	
+</p9>
+
+		<option value="2">Sharklet</option>
+		<option value="1">Winglet</option>
+	</select>
+	<br><br>	<br>	<br>
+
+	<button onclick="calculateCompatibility()"> Calculate </button>
+	<p id="compatibility"></p>
+
+
+	<script>
+		console.log("Starting AirplaneEngines ...");
+
+
+		const img = document.getElementById("boe")
+
+		function calculateCompatibility() {
+			console.log("calculateCompatibility()");
+
+
+
+			let question1Response = document.getElementById("q1").selectedOptions[0].value;
+			let question2Response = document.getElementById("q2").selectedOptions[0].value;
+			let question3Response = document.getElementById("q3").selectedOptions[0].value;
+			let question4Response = document.getElementById("q4").selectedOptions[0].value;
+			let question5Response = document.getElementById("q5").selectedOptions[0].value;
+
+
+
+			console.log("Question 1 Answers:")
+			console.log(document.getElementById("q1").selectedOptions[0].text);
+			console.log(document.getElementById("q1").selectedOptions[0].value);
+			console.log(question1Response);
+
+			console.log("Question 2 Answers:");
+			console.log(document.getElementById("q2").selectedOptions[0].text);
+			console.log(document.getElementById("q2").selectedOptions[0].value);
+			console.log(question2Response);
+
+			console.log("Question 3 Answers:");
+			console.log(document.getElementById("q3").selectedOptions[0].text);
+			console.log(document.getElementById("q3").selectedOptions[0].value);
+			console.log(question3Response);
+
+			console.log("Question 4 Answers:");
+			console.log(document.getElementById("q4").selectedOptions[0].text);
+			console.log(document.getElementById("q4").selectedOptions[0].value);
+			console.log(question4Response);
+
+			console.log("Question 5 Answers:");
+			console.log(document.getElementById("q5").selectedOptions[0].text);
+			console.log(document.getElementById("q5").selectedOptions[0].value);
+			console.log(question5Response);
+
+
+
+			let question1Compatibility = Math.abs(question1Response);
+			let question2Compatibility = Math.abs(question2Response);
+			let question3Compatibility = Math.abs(question3Response);
+			let question4Compatibility = Math.abs(question4Response);
+			let question5Compatibility = Math.abs(question5Response);
+
+			console.log("c1=" + question1Compatibility);
+			console.log("c2=" + question2Compatibility);
+			console.log("c3=" + question3Compatibility);
+			console.log("c4=" + question4Compatibility);
+			console.log("c5=" + question5Compatibility);
+
+
+
+
+			let totalCompatibility = question1Compatibility + question2Compatibility + question3Compatibility + question4Compatibility + question5Compatibility;
+
+			if (totalCompatibility <= 7) {
+				comp = "Based on Your Preferred Aircraft Features You Are Team Boeing!"
+			}
+			else if (totalCompatibility => 8) {
+				comp = "Based on Your Preferred Aircraft Feeatures You Are Team Airbus!"
+			}
+
+
+
+			document.getElementById("compatibility").innerHTML = comp;
+
+
+		}
+
+	</script>
+</body>
+
+</html>
